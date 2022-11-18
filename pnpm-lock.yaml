@@ -17,6 +17,7 @@ specifiers:
   prettier-plugin-astro: ^0.7.0
   react: ^18.0.0
   react-dom: ^18.0.0
+  react-icons: ^4.6.0
   tailwindcss: ^3.0.24
   ts-node: ^10.9.1
   ts-node-dev: ^2.0.0
@@ -42,6 +43,7 @@ devDependencies:
   eslint-plugin-astro: 0.21.0_eslint@8.26.0
   prettier: 2.7.1
   prettier-plugin-astro: 0.7.0
+  react-icons: 4.6.0_react@18.2.0
   ts-node: 10.9.1_cbe7ovvae6zqfnmtgctpgpys54
   ts-node-dev: 2.0.0_cbe7ovvae6zqfnmtgctpgpys54
   typescript: 4.8.4
@@ -2680,7 +2682,6 @@ packages:
 
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-    dev: false
 
   /js-yaml/3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
@@ -2801,7 +2802,6 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-    dev: false
 
   /lru-cache/6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
@@ -3718,12 +3718,19 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-icons/4.6.0_react@18.2.0:
+    resolution: {integrity: sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
+    dev: true
+
   /react/18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /read-cache/1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
