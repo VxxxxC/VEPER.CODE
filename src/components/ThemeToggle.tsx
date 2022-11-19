@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { IoSunny, IoMoon } from "react-icons/io5";
 
 function ThemeToggle() {
   const themes = ["light", "dark"];
@@ -32,18 +33,18 @@ function ThemeToggle() {
   }, []);
 
   return isMounted ? (
-    <div className="inline-flex justify-center p-1 rounded-3xl bg-gray-600">
+    <div className="flex justify-center p-[1px] rounded-full bg-orange-500 dark:bg-purple-500">
       {themes.map((color) => {
         const toggle = color === theme;
         return (
           <button
             key={color}
             className={`${
-              toggle ? "bg-white text-black" : "text-white"
-            } cursor-pointer p-2 rounded-3xl`}
+              toggle ? "bg-white text-black" : ""
+            }  p-2 rounded-full flex justify-center w-[100%]`}
             onClick={() => toggleTheme()}
           >
-            {color}
+            {color === "dark" ? <IoMoon /> : <IoSunny />}
           </button>
         );
       })}
