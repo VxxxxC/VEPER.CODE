@@ -5,5 +5,5 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https://example.com",
-  integrations: [sitemap(), react(), tailwind()]
+  integrations: [sitemap(), react(), tailwind()],
 });

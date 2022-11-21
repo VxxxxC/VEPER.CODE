@@ -7,7 +7,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsx": "react",
+    "jsxImportSource": "react",
   }
 }

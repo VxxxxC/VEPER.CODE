@@ -3,7 +3,6 @@ import { IoSunny, IoMoon } from "react-icons/io5";
 
 function ThemeToggle() {
   const themes = ["light", "dark"];
-  const [isMounted, setIsMounted] = useState(false);
   const [theme, setTheme] = useState(() => {
     if (typeof localStorage !== undefined && localStorage.getItem("theme")) {
       return "dark";
@@ -18,9 +17,9 @@ function ThemeToggle() {
     setTheme(color);
   };
 
-  useEffect(() => {
-    const root = document.documentElement;
+  const root = document.documentElement;
 
+  useEffect(() => {
     if (theme === "light") {
       root.classList.remove("dark");
     } else {
@@ -29,11 +28,20 @@ function ThemeToggle() {
   }, [theme]);
 
   useEffect(() => {
-    setIsMounted(true);
+    if (
+      typeof localStorage !== undefined &&
+      localStorage.getItem("theme") === "dark"
+    ) {
+      root.classList.add("dark");
+      setTheme("dark");
+    } else {
+      root.classList.remove("dark");
+      setTheme("light");
+    }
   }, []);
 
-  return isMounted ? (
-    <div className="flex justify-center p-[1px] rounded-full bg-orange-500 dark:bg-purple-500">
+  return (
+    <div className="my-3 w-[100px] flex justify-center rounded-full bg-orange-500 dark:bg-purple-500">
       {themes.map((color) => {
         const toggle = color === theme;
         return (
@@ -49,8 +57,6 @@ function ThemeToggle() {
         );
       })}
     </div>
-  ) : (
-    <div />
   );
 }
 

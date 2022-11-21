@@ -1,7 +1,12 @@
 ---
+import HeaderLink from "./HeaderLink.astro";
+import { IoLogoGithub } from "react-icons/io5";
 const today = new Date();
 ---
 
 <footer class="text-3xl font-vr flex justify-center my-5 px-3">
-	&copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+  &copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+  <HeaderLink href="https://github.com/vxxxxc" target="_blank"
+    ><IoLogoGithub size={36} />GitHub</HeaderLink
+  >
 </footer>
