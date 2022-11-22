@@ -1,7 +1,6 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_TITLE } from "../config";
-import { Image } from "@astrojs/image/components";
 
 // Use Astro.glob() to fetch all md or mdx markdown pages from "/project", and then sort them by date.
 const posts = (await Astro.glob("./project/*.{md,mdx}")).sort(
@@ -51,20 +50,25 @@ posts.map((post) => {
         {
           posts.map((post) => (
             <li class="p-5 inline-flex flex-col">
-              <div class="p-2 grid self-start">
-                <a href={post.url}>{post.frontmatter.title}</a>
+              <div class="p-2 self-start">
+                <a href={post.url}>
+                <p class="text-xl font-bold">{post.frontmatter.title}</p>
+                </a>
                 <time datetime={post.frontmatter.pubDate}>
                   {new Date(post.frontmatter.pubDate).toDateString()}
                 </time>
               </div>
-              <a href={post.url}>
+              <div class="m-2 p-2 bg-gray-700 rounded-t-xl text-white">
+<p>{post.frontmatter.description}</p>
+              </div>
+             <a href={post.url}>
                 <img
                   alt="titleImage"
                   width={720 * 2}
                   class="border rounded-xl border-white"
                   src={post.frontmatter.heroImage}
                 />
-              </a>
+             </a>
             </li>
           ))
         }

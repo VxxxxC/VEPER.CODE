@@ -1,10 +1,10 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import Body from "../components/Body.astro";
 import Footer from "../components/Footer.astro";
 import BlogReturnButton from "../components/BlogReturnButton";
 import ThemeToggle from "../components/ThemeToggle";
+import HeaderLogo from "../components/HeaderLogo.astro";
 
 export interface Props {
   content: {
@@ -36,8 +36,9 @@ const {
     </style>
   </head>
 
+    <HeaderLogo/>
   <Body>
-    <nav class="my-5 flex justify-between">
+    <nav class="my-5 px-5 flex justify-between">
       <div>
         <BlogReturnButton client:only="react" />
       </div>
@@ -50,7 +51,7 @@ const {
         {
           heroImage && (
             <img
-              class="inline"
+              class="inline p-5 rounded-3xl"
               width={720 * 2}
               height={360 * 2}
               src={heroImage}
@@ -71,6 +72,5 @@ const {
         <slot />
       </article>
     </main>
-    <Footer />
   </Body>
 </html>

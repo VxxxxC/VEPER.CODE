@@ -3,43 +3,11 @@ import HeaderLink from "./HeaderLink.astro";
 import { IoLogoGithub } from "react-icons/io5";
 import ThemeToggle from "./ThemeToggle";
 import HeaderComponent from "./HeaderComponent";
-import { SITE_TITLE } from "../config";
+import HeaderLogo from "./HeaderLogo.astro";
 ---
 
 <header class="fontt-vr">
-  <style>
-    .neonText {
-      animation: flicker 1.5s infinite alternate;
-      color: #fff;
-    }
-
-    h1 {
-      font-size: 4.2rem;
-    }
-
-    /* Flickering animation */
-    @keyframes flicker {
-      0%,
-      18%,
-      22%,
-      25%,
-      53%,
-      57%,
-      100% {
-        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
-          0 0 40px #00e6ff, 0 0 80px #00e6ff, 0 0 90px #00e6ff,
-          0 0 100px #00e6ff, 0 0 150px #00e6ff;
-      }
-
-      20%,
-      24%,
-      55% {
-        text-shadow: none;
-      }
-    }
-  </style>
-
-  <h1 class="neonText relative mb-20 text-4xl">{SITE_TITLE}</h1>
+  <HeaderLogo/>
   <nav
     class="fixed p-5 flex flex-col items-center mobile:top-0 mobile:left-0 mobile:justify-between"
   >

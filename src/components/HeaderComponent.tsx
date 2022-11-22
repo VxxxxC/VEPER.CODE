@@ -41,7 +41,7 @@ function HeaderComponent() {
                     href={`#${item.toLowerCase()}`}
                     className={`${
                       checkClick
-                        ? "dark:bg-white dark:text-black bg-black text-white rounded-xl"
+                        ? "dark:bg-white dark:text-black bg-black text-white font-black rounded-xl"
                         : ""
                     } cursor-pointer p-5`}
                   >
@@ -63,7 +63,7 @@ function HeaderComponent() {
             key={item}
             className={`${
               checkClick
-                ? "dark:bg-white dark:text-black bg-black text-white rounded-xl"
+                ? "dark:bg-white dark:text-black bg-black text-white font-black rounded-xl"
                 : ""
             } cursor-pointer p-5`}
             href={`#${item.toLowerCase()}`}
