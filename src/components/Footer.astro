@@ -4,9 +4,42 @@ import { IoLogoGithub } from "react-icons/io5";
 const today = new Date();
 ---
 
-<footer class="text-3xl font-vr flex justify-center my-5 px-3">
-  &copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+<style>
+  .icon-name {
+    --bg-size: 400%;
+    --color-one: hsl(0 90% 55%);
+    --color-two: hsl(255 95% 55%);
+    background: linear-gradient(
+        90deg,
+        var(--color-one),
+        var(--color-two),
+        var(--color-one)
+      )
+      0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: move-bg 8s infinite linear;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .icon-name {
+      animation: move-bg 12s linear infinite;
+    }
+    @keyframes move-bg {
+      to {
+        background-position: var(--bg-size) 0;
+      }
+    }
+  }
+</style>
+
+<footer class="text-sm font-vr flex-col my-5 px-3">
+  <div>
+    &copy; {today.getFullYear()}
+    <span class="icon-name text-3xl">VEPER.CODE</span> All rights reserved.
+  </div>
   <HeaderLink href="https://github.com/vxxxxc" target="_blank"
-    ><IoLogoGithub size={36} />GitHub</HeaderLink
+    ><IoLogoGithub size={30} />GitHub</HeaderLink
   >
 </footer>
