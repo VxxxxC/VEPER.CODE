@@ -42,34 +42,34 @@ posts.map((post) => {
   </head>
 
   <main id="project" class="w-[70%] inline-flex flex-col">
-    <h1 class="relative w-[10%] font-black text-2xl pt-10 px-5 self-start">Project</h1>
-    <div class="relative w-[40%] self-start mb-2 px-5 h-2 bg-white"/>
+    <h1 class="relative w-[10%] font-black text-2xl pt-10 px-5 self-start">
+      Project
+    </h1>
+    <div class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"></div>
     <section>
-      <ul
-        class="rounded-3xl bg-black bg-opacity-30 grid grid-cols-2 mobile:grid-cols-none place-content-center"
-      >
+      <ul class="grid grid-cols-2 mobile:grid-cols-none place-content-center">
         {
           posts.map((post) => (
             <li class="p-5 inline-flex flex-col">
               <div class="p-2 self-start">
                 <a href={post.url}>
-                <p class="text-xl font-bold">{post.frontmatter.title}</p>
+                  <p class="text-xl font-bold">{post.frontmatter.title}</p>
                 </a>
-                <time datetime={post.frontmatter.pubDate}>
+                <time class="text-gray-500" datetime={post.frontmatter.pubDate}>
                   {new Date(post.frontmatter.pubDate).toDateString()}
                 </time>
               </div>
               <div class="m-2 p-2 bg-gray-700 rounded-t-xl text-white">
-<p>{post.frontmatter.description}</p>
+                <p>{post.frontmatter.description}</p>
               </div>
-             <a href={post.url}>
+              <a href={post.url}>
                 <img
                   alt="titleImage"
                   width={720 * 2}
                   class="border rounded-xl border-white"
                   src={post.frontmatter.heroImage}
                 />
-             </a>
+              </a>
             </li>
           ))
         }

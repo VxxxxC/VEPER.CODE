@@ -1,0 +1,58 @@
+---
+import HeaderLink from "../components/HeaderLink.astro";
+import BaseHead from "../components/BaseHead.astro";
+import { SITE_TITLE } from "../config";
+import { IoLogoGithub, IoHeartOutline } from "react-icons/io5"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description="BIO" />
+  </head>
+
+  <main id="bio" class="my-20 w-[70%] inline-flex flex-col">
+    <h1 class="relative w-[10%] text-2xl font-black pt-10 px-5 self-start">
+      Bio
+    </h1>
+    <div class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"/>
+    <h2 class="text-md font-medium my-2 px-5 flex justify-between">
+      <div class="font-bold">
+        <p>1989</p>
+        <p>2021</p>
+        <p>2022</p>
+      </div>
+      <div>
+        <p>Born in Hong Kong</p>
+        <p>Quited my 12 years career in aviation engineering industry</p>
+        <p>Graduated AI & Programming Micro Master course at Tecky Academy</p>
+      </div>
+    </h2>
+
+    <h1 class="relative w-[15%] text-xl font-black pt-10 px-5 flex justify-evenly items-center">
+      I <IoHeartOutline/>
+    </h1>
+    <div class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"/>
+    <h2 class="text-md font-bold my-2 px-5 self-start">
+    <p>indie music</p>
+    <p>psychology / philosophy</p>
+    <p>climbing</p>
+    <p>natural</p>
+    <p>coffee</p>
+    </h2>
+
+
+    <h1 class="relative w-[15%] text-xl font-black pt-10 px-5 flex justify-evenly items-center">
+      Contact
+    </h1>
+    <div class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"/>
+    <h2 class="text-md font-bold my-2 px-5 self-start">
+    </h2>
+  <HeaderLink href="https://github.com/vxxxxc" target="_blank"
+    ><IoLogoGithub size={30} />GitHub</HeaderLink
+  >
+  <HeaderLink href="mailto:vxxxxc@skiff.com">vxxxxc@skiff.com</HeaderLink>
+  </main>
+
+
+</html>
