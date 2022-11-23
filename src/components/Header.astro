@@ -7,9 +7,9 @@ import HeaderLogo from "./HeaderLogo.astro";
 ---
 
 <header class="fontt-vr">
-  <HeaderLogo/>
+  <HeaderLogo />
   <nav
-    class="fixed p-5 flex flex-col items-center mobile:top-0 mobile:left-0 mobile:justify-between"
+    class="fixed p-5 flex flex-col items-center mobile:top-0 mobile:left-0 mobile:gap-x-5 mobile:flex-row mobile:justify-between"
   >
     <HeaderComponent client:only="react" />
     <ThemeToggle client:only="react" />

@@ -6,7 +6,7 @@ const isActive = href === Astro.url.pathname.replace(/\/$/, "");
 ---
 
 <a
-  class="m-2 font-vr font-bold"
+  class="p-2 flex justify-center items-center rounded-xl font-vr font-bold"
   href={href}
   class:list={[className, { active: isActive }]}
   {...props}
@@ -15,13 +15,16 @@ const isActive = href === Astro.url.pathname.replace(/\/$/, "");
 </a>
 <style>
   a {
-    display: inline-flex;
+    max-width: 200px;
     text-decoration: none;
     align-items: center;
     gap: 5px;
-    color: cyan;
+    color: rgb(110 231 183);
   }
   a:hover {
-    color: orange;
+    background-color: rgb(22 78 99);
   }
+  a:visited {
+    text-decoration: none;
+}
 </style>
