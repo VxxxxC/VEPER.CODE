@@ -10,60 +10,59 @@ import { IoLogoGithub, IoHeartOutline } from "react-icons/io5";
   <head>
     <BaseHead title={SITE_TITLE} description="BIO" />
     <style>
-      #bioDetail {
-        display: flex;
-        column-gap: 3em;
-        margin-top: 1em;
-      }
+div {
+display: flex;
+padding-top: 10px;
+}
+span{
+padding-left: 10px;
+padding-right:10px;
+
+}
+p {
+padding-top: 10px;
+}
     </style>
   </head>
 
-  <main id="bio" class="my-20 w-[70%] inline-flex flex-col">
-    <h1 class="relative w-[10%] text-2xl font-black pt-10 px-5 self-start">
-      Bio
-    </h1>
-    <div class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"></div>
-    <h2
-      class="w-[80%] text-md font-medium my-2 px-5 inline-flex justify-between"
-    >
-      <div class="font-bold">
-        <div id="bioDetail"><p>1989</p><p>Born in Hong Kong</p></div>
-        <div id="bioDetail">
-          <p>2021</p>
-          <p>Quited my 12 years career in aviation engineering industry</p>
-        </div>
-        <div id="bioDetail">
-          <p>2022</p><p>
-            Graduated AI & Programming Micro Master course at Tecky Academy
-          </p>
-        </div>
+  <main id="bio" class="my-20 px-10 inline-flex flex-col item-start">
+    <h1 class="relative self-start text-xl font-black pt-10 px-5">Bio</h1>
+    <h1 class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"/>
+    <h2 class="text-md font-medium my-2 px-5 flex flex-col items-start">
+      <div>1989 <span>Born in Hong Kong</span></div>
+      <div>
+        2021 <span
+          >Say goodbye to my 12 years career in aviation engineering industry</span
+        >
+      </div>
+      <div>
+        2022 <span
+          >Graduated AI & Programming Micro Master course at Tecky Academy</span
+        >
       </div>
     </h2>
 
     <h1
-      class="relative w-[25%] text-xl font-black pt-10 px-5 flex items-center"
+      class="relative  text-xl font-black pt-10 px-5"
     >
-      I <IoHeartOutline />
+      <IoHeartOutline size={30} />
     </h1>
-    <div class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"></div>
-    <h2 class="text-md font-bold my-2 px-5 self-start">
+    <h1 class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"/>
+    <h2 class="text-md font-bold my-2 px-5 flex flex-col items-start">
       <p>indie music</p>
       <p>psychology / philosophy</p>
-      <p>climbing</p>
-      <p>natural</p>
-      <p>coffee</p>
+      <p>climbing 🧗</p>
+      <p>coffee ☕️</p>
     </h2>
 
-    <h1
-      class="relative w-[15%] text-xl font-black pt-10 px-5 flex items-center"
-    >
-      Contact
-    </h1>
-    <div class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"></div>
-    <HeaderLink href="https://github.com/vxxxxc" target="_blank"
-      ><IoLogoGithub size={30} />GitHub</HeaderLink
-    >
-    <HeaderLink href="mailto:vxxxxc@skiff.com">vxxxxc@skiff.com</HeaderLink>
+    <h1 class="relative self-start text-xl font-black pt-10 px-5">Contact</h1>
+    <h1 class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"/>
+    <div class="my-2 px-5 flex flex-col items-start">
+      <HeaderLink href="https://github.com/vxxxxc" target="_blank"
+        ><IoLogoGithub size={30} />GitHub</HeaderLink
+      >
+      <HeaderLink href="mailto:vxxxxc@skiff.com">vxxxxc@skiff.com</HeaderLink>
+    </div>
   </main>
 
 
