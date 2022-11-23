@@ -1,6 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_TITLE } from "../config";
+import HomeWelcomeMsg from "../components/HomeWelcomeMsg"
 ---
 
 <!DOCTYPE html>
@@ -16,11 +17,10 @@ import { SITE_TITLE } from "../config";
   </head>
 
   <main class="mx-[20%]">
-    <p
-      class="text-lg flex flex-col justify-center items-center bg-gray-700 rounded-xl p-3"
-    >
-      Hi there<br />I am a full-stack developer base in HK :)
+    <p id="welMsg"
+      class="text-md flex flex-col justify-center items-center bg-gray-700 rounded-xl p-5 text-white">
     </p>
+    <HomeWelcomeMsg client:only="react"/>
   </main>
 
 

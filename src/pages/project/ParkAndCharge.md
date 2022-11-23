@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/BlogPost.astro"
-title: "Fourth post"
+title: "Park and Charge"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 15 2022"
 heroImage: "/placeholder-hero.jpg"

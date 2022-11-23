@@ -5,7 +5,7 @@ import { Menu, Transition } from "@headlessui/react";
 import ThemeToggle from "./ThemeToggle";
 
 function HeaderComponent() {
-  const headerItems = ["Home", "Project", "About"];
+  const headerItems = ["Home", "Project", "Bio"];
   const [click, setClick] = useState("Home");
 
   useEffect(() => {
@@ -39,11 +39,10 @@ function HeaderComponent() {
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
-                    className={`${
-                      checkClick
+                    className={`${checkClick
                         ? "dark:bg-white dark:text-black bg-black text-white font-black rounded-xl"
                         : ""
-                    } cursor-pointer p-5`}
+                      } cursor-pointer p-5`}
                   >
                     <button onClick={() => setClick(item)}>{item}</button>
                   </a>
@@ -61,11 +60,10 @@ function HeaderComponent() {
         return (
           <a
             key={item}
-            className={`${
-              checkClick
+            className={`${checkClick
                 ? "dark:bg-white dark:text-black bg-black text-white font-black rounded-xl"
                 : ""
-            } cursor-pointer p-5`}
+              } cursor-pointer p-5`}
             href={`#${item.toLowerCase()}`}
           >
             <button onClick={() => setClick(item)}>{item}</button>
