@@ -9,7 +9,13 @@ import Project from "./project.astro";
 import Home from "./home.astro";
 ---
 
-<!DOCTYPE html>
+<script>
+  window.onload = () => {
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  };
+</script>
+
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description="index" />
@@ -21,6 +27,4 @@ import Home from "./home.astro";
     <Bio />
     <Footer />
   </Body>
-
-
 </html>

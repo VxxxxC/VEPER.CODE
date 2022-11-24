@@ -2,7 +2,7 @@
 import HeaderLink from "../components/HeaderLink.astro";
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_TITLE } from "../config";
-import { IoLogoGithub, IoHeartOutline } from "react-icons/io5";
+import { IoLogoGithub, IoHeartOutline } from "react-icons/io5/index";
 ---
 
 <!DOCTYPE html>
@@ -10,24 +10,27 @@ import { IoLogoGithub, IoHeartOutline } from "react-icons/io5";
   <head>
     <BaseHead title={SITE_TITLE} description="BIO" />
     <style>
-div {
-display: flex;
-padding-top: 10px;
-}
-span{
-padding-left: 10px;
-padding-right:10px;
-
-}
-p {
-padding-top: 10px;
-}
+      div {
+        display: flex;
+        padding-top: 10px;
+      }
+      span {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      p {
+        padding-top: 10px;
+      }
     </style>
   </head>
 
-  <main id="bio" class="my-20 px-10 inline-flex flex-col item-start">
-    <h1 class="relative self-start text-xl font-black pt-10 px-5">Bio</h1>
-    <h1 class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"/>
+  <main
+    id="bio"
+    class="my-20 px-10 inline-flex flex-col item-start"
+    aria-label="bio"
+  >
+    <h1 class="self-start text-xl font-black pt-10 px-5">Bio</h1>
+    <h1 class="w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"></h1>
     <h2 class="text-md font-medium my-2 px-5 flex flex-col items-start">
       <div>1989 <span>Born in Hong Kong</span></div>
       <div>
@@ -42,12 +45,10 @@ padding-top: 10px;
       </div>
     </h2>
 
-    <h1
-      class="relative  text-xl font-black pt-10 px-5"
-    >
+    <h1 class="text-xl font-black pt-10 px-5">
       <IoHeartOutline size={30} />
     </h1>
-    <h1 class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"/>
+    <h1 class="w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"></h1>
     <h2 class="text-md font-bold my-2 px-5 flex flex-col items-start">
       <p>indie music</p>
       <p>psychology / philosophy</p>
@@ -55,8 +56,8 @@ padding-top: 10px;
       <p>coffee ☕️</p>
     </h2>
 
-    <h1 class="relative self-start text-xl font-black pt-10 px-5">Contact</h1>
-    <h1 class="relative w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"/>
+    <h1 class="self-start text-xl font-black pt-10 px-5">Contact</h1>
+    <h1 class="w-[40%] self-start mb-2 px-5 h-2 bg-neutral-400"></h1>
     <div class="my-2 px-5 flex flex-col items-start">
       <HeaderLink href="https://github.com/vxxxxc" target="_blank"
         ><IoLogoGithub size={30} />GitHub</HeaderLink

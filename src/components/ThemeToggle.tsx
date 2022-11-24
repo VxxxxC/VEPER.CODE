@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { IoSunny, IoMoon } from "react-icons/io5";
+import { useEffect, useState } from "react";
+import { IoSunny, IoMoon } from "react-icons/io5/index";
 
 function ThemeToggle() {
+  const root = document.documentElement;
   const themes = ["light", "dark"];
   const [theme, setTheme] = useState(() => {
-    if (typeof localStorage !== undefined && localStorage.getItem("theme")) {
+    if (typeof localStorage !== undefined && localStorage.getItem("theme")==='dark') {
       return "dark";
     }
     return "light";
@@ -17,8 +18,14 @@ function ThemeToggle() {
     setTheme(color);
   };
 
-  const root = document.documentElement;
+  /* set the initial theme color , when first loading in */
+  window.onload = () => {
+    root.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+    setTheme("dark")
+  };
 
+  /* set theme change color, when "theme" triggered */
   useEffect(() => {
     if (theme === "light") {
       root.classList.remove("dark");
@@ -27,6 +34,7 @@ function ThemeToggle() {
     }
   }, [theme]);
 
+  /* check the theme color and remain the color , between the page changing */
   useEffect(() => {
     if (
       typeof localStorage !== undefined &&
@@ -41,7 +49,7 @@ function ThemeToggle() {
   }, []);
 
   return (
-    <div className="my-3 w-[100px] flex justify-center rounded-full bg-orange-500 dark:bg-purple-500">
+    <div className="my-3 w-[100px] flex justify-center rounded-full bg-orange-500 dark:bg-purple-500" aria-label="theme toggle switch">
       {themes.map((color) => {
         const toggle = color === theme;
         return (
