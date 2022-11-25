@@ -1,5 +1,5 @@
-import { Fragment, useEffect, useState } from "react";
-import { IoMenu } from "react-icons/io5/index";
+import { Fragment, useState } from "react";
+import { IoLogoGithub, IoMenu } from "react-icons/io5/index";
 import { Menu, Transition } from "@headlessui/react";
 
 function HeaderComponent() {
@@ -43,7 +43,7 @@ function HeaderComponent() {
               </Menu.Item>
             );
           })}
-          
+          <a href="https://github.com/vxxxxc/veper.code" className="text-gray-400 p-2 flex rounded-xl hover:bg-gray-600 justify-center items-center">SOURCE <span className="px-2"><IoLogoGithub size={24}/></span></a>          
         </Menu.Items>
       </Transition>
     </Menu>
