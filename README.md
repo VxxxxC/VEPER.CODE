@@ -1,6 +1,6 @@
 ### VEPER.CODE 
 ---
-###### HOMEPAGE : [https://veper-code.vercel.app/](https://veper-code.vercel.app/)
+###### HOMEPAGE : [https://veper.codes/](https://veper.codes/)
 
 ## Project Stack 
 - [AstroUI](https://astro.build/)
