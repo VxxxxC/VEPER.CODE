@@ -13,7 +13,7 @@ heroImage: "https://user-images.githubusercontent.com/80626616/203582642-61c0778
 - <br/>
 - Mapview integrated with info list
 - Area district selection
-- real-time up parking slot of car park list
+- real-time update of car park vehicle parking slot
 - <br/>
 
 
