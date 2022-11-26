@@ -1,6 +1,6 @@
 ### VEPER.CODE 
 ---
-###### HOMEPAGE : [https://veper.codes/](https://veper.codes/)
+###### HOMEPAGE : [veper.codes](https://www.veper.codes/)
 
 ## Project Stack 
 - [AstroUI](https://astro.build/)
