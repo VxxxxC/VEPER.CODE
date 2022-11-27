@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../../layouts/ProjectPost.astro"
 title: "Braille AI (Academy Project)"
 description: "A simple trained AI model to recognizing alphabet"
 pubDate: "Jun 06 2022"

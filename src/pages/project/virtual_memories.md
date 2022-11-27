@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../../layouts/ProjectPost.astro"
 title: "Virtual Memories (Academy Project)"
 description: "A simple and clean blog that can store up your thoughts"
 pubDate: "Apr 25 2022"

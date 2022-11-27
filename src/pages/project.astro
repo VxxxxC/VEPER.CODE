@@ -50,7 +50,7 @@ posts.map((post) => {
       <ul class="grid grid-cols-2 mobile:grid-cols-none place-content-center">
         {
           posts.map((post) => (
-            <li class="p-5 inline-flex flex-col">
+            <li class="p-5 inline-flex flex-col items-center">
               <div class="p-2">
                 <a href={post.url}>
                   <p class="text-xl font-bold">{post.frontmatter.title}</p>
@@ -65,7 +65,6 @@ posts.map((post) => {
               <a href={post.url}>
                 <img
                   alt="titleImage"
-                  width={720 * 2}
                   class="border rounded-xl border-white"
                   src={post.frontmatter.heroImage}
                 />

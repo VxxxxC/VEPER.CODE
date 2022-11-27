@@ -1,7 +1,7 @@
 import React from "react";
 import { IoArrowBack } from "react-icons/io5/index";
 
-function BlogReturnButton() {
+function ReturnButton() {
   return (
     <a href="/#blog">
       <IoArrowBack
@@ -13,4 +13,4 @@ function BlogReturnButton() {
   );
 }
 
-export default BlogReturnButton;
+export default ReturnButton;

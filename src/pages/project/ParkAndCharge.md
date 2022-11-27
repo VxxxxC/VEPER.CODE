@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../../layouts/ProjectPost.astro"
 title: "Park and Charge (Personal Project)"
 description: "A real-time car park vacancy of parking slot and electric vehicle charging slot update"
 pubDate: "Jul 15 2022"
