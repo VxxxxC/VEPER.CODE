@@ -9,7 +9,6 @@
 
 ## Project Struture 
 
-
 ```
 $PROJECT_ROOT
 ├── public    # Astro public image storage
