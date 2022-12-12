@@ -1,7 +1,7 @@
 import React from "react";
 
 let text =
-  "Hi there 👋 Thank you to visit VEPER.CODE 🧑🏻‍💻 To more about me, please have a look at the below 🥳 ";
+  "Hi there 👋 Thank you to visit VEPER.CODES 🧑🏻‍💻 To more about me, please have a look at the below 🥳 ";
 let i = 0;
 
 function HomeWelcomeMsg() {
