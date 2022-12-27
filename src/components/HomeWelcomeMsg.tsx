@@ -1,17 +1,22 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 
-let text =
-  "Hi there 👋 Thank you to visit VEPER.CODES 🧑🏻‍💻 To more about me, please have a look at the below 🥳 ";
-let i = 0;
+let text1 = "Hi there 👋 Thank you to visit VEPER.CODES";
+let text2 = "I am a Developer base in Hong Kong"
+let text3 = "🧑🏻‍💻 To more about me, please have a look at the below 🥳";
 
 function HomeWelcomeMsg() {
-  if (i < text.length) {
-    const insert = document.getElementById("welMsg");
-    insert!.innerHTML += text.charAt(i);
-    i++;
-
-    setTimeout(HomeWelcomeMsg, 100);
-  }
+  return (
+    <Typewriter
+      options={{
+        cursor: "",
+        strings: [text1, text2, text3],
+        delay: 60,
+        autoStart: true,
+        loop: true,
+      }}
+    />
+  );
 }
 
 export default HomeWelcomeMsg;

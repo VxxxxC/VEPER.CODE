@@ -4,13 +4,13 @@ import HeaderComponent from "./HeaderComponent";
 import HeaderLogo from "./HeaderLogo.astro";
 ---
 
-<header class="fontt-vr">
+<header class="relative z-10 font-vr">
   <HeaderLogo />
   <div class="fixed w-[100%] p-3 top-0 flex justify-between">
     <div>
       <HeaderComponent client:only="react" />
     </div>
-    <div>
+    <div class="mobile:hidden">
       <ThemeToggle client:only="react" />
     </div>
   </div>

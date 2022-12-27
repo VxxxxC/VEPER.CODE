@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/ProjectPost.astro"
+layout: "../../layouts/ProjectLayout.astro"
 title: "[Web App]Uni-piece (Academy Project)"
 description: "E-commerce marketplace aim for handcrafted product and artwork"
 pubDate: "Jul 07 2022"

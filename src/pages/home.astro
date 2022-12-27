@@ -1,7 +1,12 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_TITLE } from "../config";
-import HomeWelcomeMsg from "../components/HomeWelcomeMsg"
+import Header from "@components/Header.astro";
+import Body from "@components/Body.astro";
+import Footer from "@components/Footer.astro";
+import HomeWelcomeMsg from "../components/HomeWelcomeMsg";
+import Bio from "./bio.astro";
+import Project from "./project.astro";
 ---
 
 <!DOCTYPE html>
@@ -16,12 +21,17 @@ import HomeWelcomeMsg from "../components/HomeWelcomeMsg"
     </style>
   </head>
 
-  <main class="mx-[20%]" aria-label="home page">
-    <p id="welMsg"
-      class="text-md flex flex-col justify-center items-center bg-gray-700 rounded-xl p-5 text-white">
-    </p>
-    <HomeWelcomeMsg client:only="react"/>
-  </main>
-
-
+  <Header title={SITE_TITLE} />
+  <Body>
+    <main class="mx-[10%]" aria-label="home page">
+      <p
+        id="welMsg"
+        class="text-md flex flex-col justify-center items-center bg-gray-700 rounded-xl p-5 text-white"
+      >
+      <HomeWelcomeMsg client:only="react" />
+      </p>
+      <Bio />
+    </main>
+    <Footer />
+  </Body>
 </html>

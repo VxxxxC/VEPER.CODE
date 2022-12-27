@@ -1,16 +1,31 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { IoLogoGithub, IoMenu } from "react-icons/io5/index";
 import { Menu, Transition } from "@headlessui/react";
+import ThemeToggle from "./ThemeToggle";
 
 function HeaderComponent() {
-  const headerItems = ["Home", "Project", "Bio"];
-  const [click, setClick] = useState("Home");
+  const headerItems = ["Home", "Project"];
+
+  const [page, setPage]: any = useState("");
+
+  useEffect(() => {
+    const local = window.location.pathname;
+
+    if (local == "/") {
+      localStorage.setItem("page", "Home");
+      setPage("Home");
+    } else {
+      setPage(localStorage.getItem("page"));
+    }
+  }, []);
 
   return (
     <Menu>
-      <Menu.Button className="relative p-3 rounded-lg border border-gray-400 dark:border-gray-600 dark:hover:bg-zinc-600 hover:bg-zinc-300 focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 dark:focus:ring-violet-700 transition duration-300"
-      aria-label="drop down menu">
-        <IoMenu size={20}/>
+      <Menu.Button
+        className="relative p-3 rounded-lg border border-gray-400 dark:border-gray-600 dark:hover:bg-zinc-600 hover:bg-zinc-300 focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 dark:focus:ring-violet-700 transition duration-300"
+        aria-label="drop down menu"
+      >
+        <IoMenu size={20} />
       </Menu.Button>
 
       <Transition
@@ -24,26 +39,39 @@ function HeaderComponent() {
       >
         <Menu.Items className="absolute left-5 z-20 w-56 p-3 flex flex-col rounded-xl dark:bg-neutral-700 bg-neutral-400 dark:text-white text-black bg-opacity-30">
           {headerItems.map((item) => {
-            const checkClick = item === click;
+            const checkClick = item === page;
             return (
               <Menu.Item>
-                {({ active }) => (<button onClick={() => setClick(item)}>
-                  <a
-                    key={item}
-                    href={`#${item.toLowerCase()}`}
-                    className={`${
-                      checkClick
-                        ? "dark:bg-white dark:text-black bg-black text-white font-black"
-                        : "hover:underline hover:decoration-2 hover:underline-offset-8"
-                    } cursor-pointer w-[200px] h-[50px] px-5 flex items-center`}
-                  >
-                    {item}                  </a></button>
-
+                {({ active }) => (
+                  <button onClick={() => localStorage.setItem("page", item)}>
+                    <a
+                      key={item}
+                      href={`/${item.toLowerCase()}`}
+                      className={`${
+                        checkClick
+                          ? "dark:bg-white dark:text-black bg-black text-white font-black"
+                          : "hover:underline hover:decoration-2 hover:underline-offset-8"
+                      } cursor-pointer w-[200px] h-[50px] px-5 flex items-center`}
+                    >
+                      {item}{" "}
+                    </a>
+                  </button>
                 )}
               </Menu.Item>
             );
           })}
-          <a href="https://github.com/vxxxxc/veper.code" className="text-gray-400 p-2 flex rounded-xl hover:bg-gray-600 justify-center items-center">SOURCE <span className="px-2"><IoLogoGithub size={24}/></span></a>          
+          <a
+            href="https://github.com/vxxxxc/veper.code"
+            className="text-gray-400 p-2 flex rounded-xl hover:bg-gray-600 justify-center items-center"
+          >
+            SOURCE{" "}
+            <span className="px-2">
+              <IoLogoGithub size={24} />
+            </span>
+          </a>
+          <div className="mobile:visible mobile:flex mobile:justify-center hidden">
+            <ThemeToggle />
+          </div>
         </Menu.Items>
       </Transition>
     </Menu>

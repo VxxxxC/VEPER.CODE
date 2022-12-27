@@ -1,9 +1,10 @@
 ### VEPER.CODE 
 ---
+A personal portfolio website , made by AstroUI framework 
 ###### HOMEPAGE : [veper.codes](https://www.veper.codes/)
 
 ## Project Stack 
-- [AstroUI](https://astro.build/)
+- [AstroUI](https://astro.build/) 
 - [Tailwindcss](https://tailwindcss.com/)
 - [React](https://reactjs.org/)
 

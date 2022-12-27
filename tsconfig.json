@@ -10,9 +10,16 @@
     "skipLibCheck": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "paths":{
-      "@components/*":["src/components/*"],
-      "@layouts/*":["src/layouts/*"]
+    "paths": {
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ]
     }
   }
 }
