@@ -12,15 +12,15 @@ const ProjectPost = () => {
         <ParkAndCharge />
       </MotionDiv>
       <div className="mt-10">
-      <div className="h-[1px] w-[100%] bg-gray-700"/>
-      <div className="py-8 text-lg flex ">Academy</div>
+        <div className="h-[1px] w-[100%] bg-gray-700" />
+        <div className="py-8 text-lg flex ">Academy</div>
       </div>
       <MotionDiv delay={0.5}>
-        <Unipiece/>
-      <Braille />
-        <VirtualMemories/>
+        <Unipiece />
+        <Braille />
+        <VirtualMemories />
       </MotionDiv>
-      </>
+    </>
   );
 };
 

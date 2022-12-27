@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const MotionDiv = ({ children, delay }) => (
+const MotionDiv = ({ children, delay }: { children: any, delay: number }) => (
   <motion.div
     className="flex flex-wrap justify-evenly gap-8"
     initial={{ y: 30, opacity: 0 }}
