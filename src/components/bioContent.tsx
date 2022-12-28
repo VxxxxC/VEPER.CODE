@@ -1,6 +1,11 @@
 import React from "react";
 import MotionDiv from "./motionDiv";
-import { IoLogoGithub, IoHeartOutline } from "react-icons/io5/index";
+import {
+  IoLogoGithub,
+  IoHeartOutline,
+  IoLogoInstagram,
+  IoLogoLinkedin,
+} from "react-icons/io5/index";
 import { MdKeyboardArrowRight } from "react-icons/md/index";
 import "./bioContent.css";
 
@@ -43,7 +48,7 @@ const BioContent = () => {
             </a>
           </div>
           <div className="flex flex-col items-start">
-            <h1 className="text-xl font-black pt-10 px-5">
+            <h1 className="text-xl font-black mt-10">
               Bio
               <h1 className="mb-2 h-1 bg-gray-600"></h1>
             </h1>
@@ -79,12 +84,12 @@ const BioContent = () => {
           </h2>
 
           <div className="flex flex-col items-start">
-            <h1 className="text-xl font-black pt-10 px-5">
+            <h1 className="text-xl font-black mt-10">
               Tech I Use
               <h1 className="mb-2 h-1 bg-gray-600"></h1>
             </h1>
           </div>
-          <blockquote className="py-5 px-10 bg-zinc-400 dark:bg-zinc-700 rounded-lg flex flex-col items-start">
+          <blockquote className="py-5 px-5 bg-zinc-400 dark:bg-zinc-700 rounded-lg flex flex-col items-start">
             <li>RESTful API</li>
             <li>AJAX</li>
             <li>Git</li>
@@ -116,12 +121,12 @@ const BioContent = () => {
           </fieldset>
 
           <div className="flex flex-col items-start">
-            <h1 className="text-xl font-black pt-10 px-5">
+            <h1 className="text-xl font-black mt-10">
               <IoHeartOutline size={30} />
               <h1 className="mb-2 h-1 bg-gray-600"></h1>
             </h1>
           </div>
-          <h2 className="text-md font-bold my-2 px-5 flex flex-col items-start">
+          <h2 className="text-md font-bold my-2 flex flex-col items-start">
             <p>indie music</p>
             <p>psychology / philosophy</p>
             <p>climbing 🧗</p>
@@ -129,14 +134,14 @@ const BioContent = () => {
           </h2>
 
           <div className="flex flex-col items-start">
-            <h1 className="text-xl font-black pt-10 px-5">
-              Contact
-              <h1 className="mb-2 h-1 bg-gray-600"></h1>
+            <h1 className="text-xl font-black mt-10">
+              Connect
+              <h1 className="h-1 bg-gray-600"></h1>
             </h1>
           </div>
-          <div className="my-2 px-5 flex flex-col items-start">
+          <div className="flex flex-col items-start">
             <a
-              className="p-2 flex justify-center items-center rounded-xl font-vr font-bold text-cyan-900 hover:bg-teal-400 dark:text-teal-400 dark:hover:bg-cyan-900"
+              className="py-2 px-8 flex justify-center items-center gap-4 rounded-xl font-vr font-bold text-cyan-900 hover:bg-teal-400 dark:text-teal-400 dark:hover:bg-cyan-900"
               href="https://github.com/vxxxxc"
               target="_blank"
             >
@@ -144,10 +149,21 @@ const BioContent = () => {
               GitHub
             </a>
             <a
-              className="p-2 flex justify-center items-center rounded-xl font-vr font-bold text-cyan-900 hover:bg-teal-400 dark:text-teal-400 dark:hover:bg-cyan-900"
-              href="mailto:vxxxxc@skiff.com"
+              className="py-2 px-8 flex justify-center items-center gap-4 rounded-xl font-vr font-bold text-cyan-900 hover:bg-teal-400 dark:text-teal-400 dark:hover:bg-cyan-900"
+              href="https://www.instagram.com/vepercodes/"
+              target="_blank"
             >
-              vxxxxc@skiff.com
+              <IoLogoInstagram size={30} />
+              Instgram
+            </a>
+
+            <a
+              className="py-2 px-8 flex justify-center items-center gap-4 rounded-xl font-vr font-bold text-cyan-900 hover:bg-teal-400 dark:text-teal-400 dark:hover:bg-cyan-900"
+              href="https://www.linkedin.com/in/veper-ho/"
+              target="_blank"
+            >
+              <IoLogoLinkedin size={30} />
+              LinkedIn
             </a>
           </div>
         </main>
