@@ -14,6 +14,10 @@ const Unipiece = () => {
       <main className="w-[550px] mobile:w-[100%]"> 
       <img id="image" className="my-4 rounded-lg" src={img} />
       <div id="title" className="my-4 text-2xl">{title}</div>
+        <div>
+          <div className="inline border border-teal-400 px-2 font-bold text-teal-300 bg-teal-800 dark:text-cyan-300 dark:bg-cyan-900">Site</div>
+          <a className="mx-2 text-pink-600 hover:underline" href="https://unipiece.full-stack.app/">https://unipiece.full-stack.app/</a>
+        </div>
 
         <div className="flex flex-col items-start">
         <div className="flex my-4 gap-2 justify-evenly items-center">

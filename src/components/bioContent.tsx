@@ -42,8 +42,12 @@ const BioContent = () => {
               </button>
             </a>
           </div>
-          <h1 className="self-start text-xl font-black px-5">Bio</h1>
-          <h1 className="w-[20%] self-start mb-2 px-5 h-1 bg-gray-600"></h1>
+          <div className="flex flex-col items-start">
+            <h1 className="text-xl font-black pt-10 px-5">
+              Bio
+              <h1 className="mb-2 h-1 bg-gray-600"></h1>
+            </h1>
+          </div>
           <h2 className="text-md font-medium my-2 px-5 flex flex-col items-start">
             <table>
               <tbody>
@@ -59,6 +63,11 @@ const BioContent = () => {
                   </td>
                 </tr>
                 <tr>
+                  <td>2021 - 2022</td>
+                  <td>Career Transition</td>
+                </tr>
+
+                <tr>
                   <td>2022</td>
                   <td>
                     Graduated AI & Programming Micro Master course at Tecky
@@ -69,10 +78,12 @@ const BioContent = () => {
             </table>
           </h2>
 
-          <h1 className="self-start text-xl font-black pt-10 px-5">
-            Tech I Use
-          </h1>
-          <h1 className="w-[20%] self-start mb-2 px-5 h-1 bg-gray-600"></h1>
+          <div className="flex flex-col items-start">
+            <h1 className="text-xl font-black pt-10 px-5">
+              Tech I Use
+              <h1 className="mb-2 h-1 bg-gray-600"></h1>
+            </h1>
+          </div>
           <blockquote className="py-5 px-10 bg-zinc-400 dark:bg-zinc-700 rounded-lg flex flex-col items-start">
             <li>RESTful API</li>
             <li>AJAX</li>
@@ -104,10 +115,12 @@ const BioContent = () => {
             <p>Dart</p>
           </fieldset>
 
-          <h1 className="text-xl font-black pt-10 px-5">
-            <IoHeartOutline size={30} />
-          </h1>
-          <h1 className="w-[20%] self-start mb-2 px-5 h-1 bg-gray-600"></h1>
+          <div className="flex flex-col items-start">
+            <h1 className="text-xl font-black pt-10 px-5">
+              <IoHeartOutline size={30} />
+              <h1 className="mb-2 h-1 bg-gray-600"></h1>
+            </h1>
+          </div>
           <h2 className="text-md font-bold my-2 px-5 flex flex-col items-start">
             <p>indie music</p>
             <p>psychology / philosophy</p>
@@ -115,8 +128,12 @@ const BioContent = () => {
             <p>coffee ☕️</p>
           </h2>
 
-          <h1 className="self-start text-xl font-black pt-10 px-5">Contact</h1>
-          <h1 className="w-[20%] self-start mb-2 px-5 h-1 bg-gray-600"></h1>
+          <div className="flex flex-col items-start">
+            <h1 className="text-xl font-black pt-10 px-5">
+              Contact
+              <h1 className="mb-2 h-1 bg-gray-600"></h1>
+            </h1>
+          </div>
           <div className="my-2 px-5 flex flex-col items-start">
             <a
               className="p-2 flex justify-center items-center rounded-xl font-vr font-bold text-cyan-900 hover:bg-teal-400 dark:text-teal-400 dark:hover:bg-cyan-900"

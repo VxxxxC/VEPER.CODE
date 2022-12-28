@@ -11,7 +11,7 @@ const ParkAndCharge = () => {
 
   return (
     <>
-      <main className="w-[450px] mobile:w-[100%]"> 
+      <main className="w-[450px] mobile:w-[100%] mobile:flex mobile:flex-col"> 
       <img id="image" className="my-4 rounded-lg" src={img} />
       <div id="title" className="my-4 text-2xl">{title}</div>
 

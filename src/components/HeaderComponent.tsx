@@ -62,7 +62,7 @@ function HeaderComponent() {
           })}
           <a
             href="https://github.com/vxxxxc/veper.code"
-            className="text-gray-400 p-2 flex rounded-xl hover:bg-gray-600 justify-center items-center"
+            className="dark:text-gray-400 p-2 flex rounded-xl dark:hover:bg-gray-600 hover:bg-white justify-center items-center"
           >
             SOURCE{" "}
             <span className="px-2">
