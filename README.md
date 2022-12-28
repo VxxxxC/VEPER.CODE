@@ -1,12 +1,13 @@
 ### VEPER.CODE 
 ---
-A personal portfolio website , made by AstroUI framework 
+A personal portfolio website, made by Astro framework 
 ###### HOMEPAGE : [veper.codes](https://www.veper.codes/)
 
 ## Project Stack 
-- [AstroUI](https://astro.build/) 
-- [Tailwindcss](https://tailwindcss.com/)
+- [Astro](https://astro.build/) 
 - [React](https://reactjs.org/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [FramerMotion](https://www.framer.com/motion/)
 
 ## Project Struture 
 
@@ -14,9 +15,8 @@ A personal portfolio website , made by AstroUI framework
 $PROJECT_ROOT
 ├── public    # Astro public image storage
 └── src
-    ├── components    # Astro / React component files
-    ├── layouts       # layout files for project post
-    ├── pages         # html files
-    │   └── project   # project post
-    └── styles        # global css files
+    ├── components    # React components
+    ├── pages         # Astro files
+    │   └── project   # Project post
+    └── styles        # Global css files
 ```
