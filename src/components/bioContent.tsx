@@ -154,7 +154,7 @@ const BioContent = () => {
               target="_blank"
             >
               <IoLogoInstagram size={30} />
-              Instgram
+              Instagram
             </a>
 
             <a
