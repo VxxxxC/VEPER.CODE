@@ -24,14 +24,14 @@ const BioContent = () => {
         >
           <div className="mx-[5%] flex justify-between mobile:flex-col mobile:items-center">
             <div className="inline-flex flex-col items-center justify-center">
-              <div className="my-2 text-4xl font-black">Veper Ho</div>
+              <div className="my-2 text-4xl font-bold">Veper Ho</div>
               <div className="my-2 text-sm">
                 Codes / Subcultures / Indie Music
               </div>
             </div>
             <img
-              className="w-52 h-52 border border-opacity-10 border-white rounded-3xl object-cover"
-              src="https://user-images.githubusercontent.com/80626616/208250986-0afd9988-f1ea-4848-a8f9-ce9fdf23e27f.JPG"
+              className="w-60 h-60 border border-opacity-10 border-white rounded-3xl object-cover"
+              src="https://user-images.githubusercontent.com/80626616/210180624-83262f27-2550-4a30-92c8-7a9cddbb3359.jpg"
             />
           </div>
           <div className="mt-8">
