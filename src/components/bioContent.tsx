@@ -118,6 +118,7 @@ const BioContent = () => {
           <fieldset className="font-black text-lg text-orange-500 border-4 border-teal-400 dark:border-cyan-500">
             <legend>Currently Learning</legend>
             <p>Dart</p>
+            <p>Flutter</p>
           </fieldset>
 
           <div className="flex flex-col items-start">
