@@ -22,19 +22,20 @@ const Unipiece = () => {
         <div id="title" className="my-4 text-2xl">
           {title}
         </div>
-        <div>
-          <div className="inline border border-teal-800 dark:border-teal-400 px-2 font-bold text-teal-800 bg-teal-400 dark:text-teal-300 dark:bg-teal-900">
-            Site
-          </div>
-          <a
-            className="mx-2 text-pink-600 hover:underline"
-            href="https://unipiece.full-stack.app/"
-          >
-            https://unipiece.full-stack.app/
-          </a>
-        </div>
 
         <div className="flex flex-col items-start">
+          <div className="flex gap-4">
+            <div className="border border-rose-300 dark:border-rose-800 px-2 font-bold text-rose-300 bg-rose-700 dark:text-rose-700 dark:bg-rose-300">
+              Site
+            </div>
+            <a
+              className="text-pink-600 hover:underline"
+              href="https://unipiece.full-stack.app/"
+              target="_blank"
+            >
+              https://unipiece.full-stack.app/
+            </a>
+          </div>
           <div className="flex my-4 gap-2 justify-evenly items-center">
             <div className="border border-teal-400 px-1 text-teal-300 bg-teal-800 dark:text-teal-800 dark:bg-teal-300">
               Desc

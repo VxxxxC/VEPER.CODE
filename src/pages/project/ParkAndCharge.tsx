@@ -1,5 +1,6 @@
 import React from "react";
 import Selector from "@components/TechIcons";
+import { SiIos } from "react-icons/si";
 
 const ParkAndCharge = () => {
   const title = "Park & Charge";
@@ -20,7 +21,20 @@ const ParkAndCharge = () => {
           {title}
         </div>
 
+
         <div className="flex flex-col items-start">
+        <div className="flex items-center">
+          <div className="border border-amber-300 dark:border-amber-800 px-2 font-bold text-amber-300 bg-amber-700 dark:text-amber-700 dark:bg-amber-300">
+           Platform 
+          </div>
+          <a
+            className="mx-2 p-2 rounded-full bg-white text-black hover:bg-black hover:text-white duration-700"
+            href="https://apps.apple.com/app/id1659625087"
+            target="_blank"
+          >
+            <SiIos size={30}/>
+          </a>
+        </div>
           <div className="flex my-4 gap-2 justify-evenly items-center">
             <div className="border border-teal-400 px-1 text-teal-300 bg-teal-800 dark:text-teal-800 dark:bg-teal-300">
               Desc
