@@ -33,7 +33,7 @@ const Braille = () => {
             </div>
             <div
               id="features"
-              className="flex items-start justify-center flex-wrap gap-4 text-sm font-sans"
+              className="p-4 flex flex-wrap gap-4 text-sm font-sans"
             >
               {features.map((item) => {
                 return <li>{item}</li>;
