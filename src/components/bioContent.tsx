@@ -1,4 +1,5 @@
 import React from "react";
+import Selector from "@components/TechIcons";
 import MotionDiv from "./motionDiv";
 import {
   IoLogoGithub,
@@ -79,6 +80,46 @@ const BioContent = () => {
                     Academy
                   </td>
                 </tr>
+
+                <tr>
+                  <td>2023 - present</td>
+                  <td class="w-full">
+                    <p className="underline underline-offset-4">
+                      Frontend Developer in BOXS
+                    </p>
+                    <div className="flex flex-rows mobile:flex-col justify-center content-center gap-2">
+                      <div className="flex flex-col items-center">
+                        <p>Tech Stack</p>
+                        <blockquote className="text-left p-5 rounded-lg bg-zinc-400 dark:bg-zinc-700">
+                          <Selector props="Javascript" />
+                          <Selector props="Typescript" />
+                          <Selector props="Nodejs" />
+                          <Selector props="Feathers.js" />
+                          <Selector props="MongoDB" />
+                        </blockquote>
+                      </div>
+                      <div className="flex flex-col items-center">
+                        <p>Framework</p>
+                        <blockquote className="text-left p-5 rounded-lg bg-zinc-400 dark:bg-zinc-700">
+                          <li>Frontend - Vue.js, Nuxt.js</li>
+                          <li>App Development - NativeScript</li>
+                          <li>Backend - feathers.js, MongoDB</li>
+                        </blockquote>
+                      </div>
+                      <div className="flex flex-col items-center">
+                        <p>Work</p>
+                        <blockquote className="text-left p-5 rounded-lg bg-zinc-400 dark:bg-zinc-700">
+                          <li>Participating POS System UI revamp</li>
+                          <li>Create reuseable UI components</li>
+                          <li>
+                            Collaborate with designers to define UX flow, UI
+                            design, and shipping new features
+                          </li>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </h2>
@@ -89,7 +130,7 @@ const BioContent = () => {
               <h1 className="mb-2 h-1 bg-gray-600"></h1>
             </h1>
           </div>
-          <blockquote className="py-5 px-5 bg-zinc-400 dark:bg-zinc-700 rounded-lg flex flex-col items-start">
+          <blockquote className="p-5 bg-zinc-400 dark:bg-zinc-700 rounded-lg flex flex-col items-start">
             <li>RESTful API</li>
             <li>AJAX</li>
             <li>Git</li>
