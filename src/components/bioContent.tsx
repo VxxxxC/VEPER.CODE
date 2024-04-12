@@ -83,7 +83,7 @@ const BioContent = () => {
 
                 <tr>
                   <td>2023 - present</td>
-                  <td class="w-full">
+                  <td>
                     <p className="underline underline-offset-4">
                       Frontend Developer in BOXS
                     </p>
