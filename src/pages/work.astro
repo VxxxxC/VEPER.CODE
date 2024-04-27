@@ -1,0 +1,28 @@
+---
+import ProjectLayout from "@layouts/ProjectLayout.astro";
+import BaseHead from "../components/BaseHead.astro";
+import { SITE_TITLE } from "../config";
+import Header from "@components/Header.astro";
+import Body from "@components/Body.astro";
+import Footer from "@components/Footer.astro";
+import Boxs from "@pages/work/boxs"
+---
+
+<script lang="ts">
+import ProjectLayout from "@layouts/ProjectLayout.astro";
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+    <BaseHead title={SITE_TITLE} description="WORK" />
+
+    <Header title={SITE_TITLE} />
+
+    <Body>
+        <main class="mx-[10%]" aria-label="home page">
+          <div> THIS IS WORK PAGE </div>
+          <Boxs />
+        </main>
+        <Footer />
+      </Body>
+</html>
