@@ -3,13 +3,9 @@ import MotionDiv from "@components/motionDiv";
 
 const Boxs = () => {
   return (
-    <>
-      {/* <MotionDiv delay={0.5}> */}
-      <div className="mt-10">
-        <div className="py-8 text-lg">THIS IS WORK PAGE - BOXS</div>
+      <div className="flex flex-col items-center">
+        <div className="text-base font-normal">BOXS - Frontend Developer</div>
       </div>
-      {/* </MotionDiv> */}
-    </>
   );
 };
 

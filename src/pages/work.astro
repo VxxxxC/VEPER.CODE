@@ -5,7 +5,7 @@ import { SITE_TITLE } from "../config";
 import Header from "@components/Header.astro";
 import Body from "@components/Body.astro";
 import Footer from "@components/Footer.astro";
-import Boxs from "@pages/work/boxs"
+import WorkPosts from "./work/workPosts";
 ---
 
 <script lang="ts">
@@ -16,12 +16,12 @@ import ProjectLayout from "@layouts/ProjectLayout.astro";
 <html lang="en">
     <BaseHead title={SITE_TITLE} description="WORK" />
 
-    <Header title={SITE_TITLE} />
+    <Header />
 
     <Body>
-        <main class="mx-[10%]" aria-label="home page">
-          <div> THIS IS WORK PAGE </div>
-          <Boxs />
+        <main class="mx-[10%] flex flex-col gap-5" aria-label="home page">
+          <div class="self-start underline underline-offset-8 text-xl font-semibold">WORK</div>
+          <WorkPosts client:only="react" />
         </main>
         <Footer />
       </Body>
