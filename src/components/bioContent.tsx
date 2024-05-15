@@ -84,40 +84,9 @@ const BioContent = () => {
                 <tr>
                   <td>2023 - present</td>
                   <td>
-                    <p className="underline underline-offset-4">
+                    <a href="/work/boxs" className="underline underline-offset-4">
                       Frontend Developer in BOXS
-                    </p>
-                    <div className="flex flex-rows mobile:flex-col justify-center content-center gap-2">
-                      <div className="flex flex-col items-center">
-                        <p>Tech Stack</p>
-                        <blockquote className="text-left p-5 rounded-lg bg-zinc-400 dark:bg-zinc-700">
-                          <Selector props="Javascript" />
-                          <Selector props="Typescript" />
-                          <Selector props="Nodejs" />
-                          <Selector props="Feathers.js" />
-                          <Selector props="MongoDB" />
-                        </blockquote>
-                      </div>
-                      <div className="flex flex-col items-center">
-                        <p>Framework</p>
-                        <blockquote className="text-left p-5 rounded-lg bg-zinc-400 dark:bg-zinc-700">
-                          <li>Frontend - Vue.js, Nuxt.js</li>
-                          <li>App Development - NativeScript</li>
-                          <li>Backend - feathers.js, MongoDB</li>
-                        </blockquote>
-                      </div>
-                      <div className="flex flex-col items-center">
-                        <p>Work</p>
-                        <blockquote className="text-left p-5 rounded-lg bg-zinc-400 dark:bg-zinc-700">
-                          <li>Participating POS System UI revamp</li>
-                          <li>Create reuseable UI components</li>
-                          <li>
-                            Collaborate with designers to define UX flow, UI
-                            design, and shipping new features
-                          </li>
-                        </blockquote>
-                      </div>
-                    </div>
+                    </a>
                   </td>
                 </tr>
               </tbody>
