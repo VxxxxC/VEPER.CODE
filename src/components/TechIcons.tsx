@@ -13,10 +13,11 @@ import {
   SiPython,
   SiTensorflow,
   SiAmazonaws,
+  SiNativescript,
 } from "react-icons/si";
 import { GiFeather } from "react-icons/gi";
 
-const selector = ({props, size = 18} : {props:string, size?: number}) => {
+const selector = ({ props, size = 18 }: { props: string; size?: number }) => {
   const name = props;
   const icon = (name: string) => {
     switch (name) {
@@ -132,13 +133,20 @@ const selector = ({props, size = 18} : {props:string, size?: number}) => {
             {name}
           </div>
         );
-        case "Feathers.js":
-          return (
-            <div className="w-[140px] font-sans rounded-3xl m-2 py-1 gap-2 flex justify-center items-center text-orange-400 bg-white">
+      case "Feathers.js":
+        return (
+          <div className="w-[140px] font-sans rounded-3xl m-2 py-1 gap-2 flex justify-center items-center text-orange-400 bg-white">
             <GiFeather size={size} color="orange-400" />
             {name}
           </div>
-          )
+        );
+      case "NativeScript":
+        return (
+          <div className="w-[140px] font-sans rounded-3xl m-2 py-1 gap-2 flex justify-center items-center text-sky-400 bg-stone-50">
+            <SiNativescript size={size} color="sky-400" />
+            {name}
+          </div>
+        );
     }
   };
 
