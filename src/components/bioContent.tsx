@@ -84,7 +84,7 @@ const BioContent = () => {
                 <tr>
                   <td>2023 - present</td>
                   <td>
-                    <a href="/work/boxs" className="underline underline-offset-4">
+                    <a href="/work" className="underline underline-offset-4">
                       Frontend Developer in BOXS
                     </a>
                   </td>

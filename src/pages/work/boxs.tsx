@@ -1,6 +1,7 @@
 import React from "react";
 import Selector from "@components/TechIcons";
-import Feature from "./boxs/feature";
+import Revamp from "./boxs/revamp";
+import NewFeature from "./boxs/newFeature";
 
 const Boxs = () => {
   return (
@@ -45,10 +46,11 @@ const Boxs = () => {
         </fieldset>
       </div>
 
-      <div className="w-full mt-5">
-        <fieldset className="w-full p-5 rounded-lg border border-zinc-400 dark:border-zinc-700">
-          <legend className="px-2 text-base font-medium">CONTENT AREA</legend>
-          <Feature />
+      <div className="h-full w-full mt-5">
+        <fieldset className="h-[65vh] w-full overflow-x-hidden overflow-y-scroll scroll-smooth justify-center content-center gap-2 m-2 rounded-lg border border-zinc-400 dark:border-zinc-700">
+          <legend className="px-2 text-base font-medium">Demo Content</legend>
+          <Revamp />
+          <NewFeature />
         </fieldset>
       </div>
     </div>
