@@ -29,7 +29,7 @@ const Boxs = () => {
         {/*   <li>App Development - NativeScript</li> */}
         {/*   <li>Backend - feathers.js, MongoDB</li> */}
         {/* </fieldset> */}
-        <fieldset className="h-full overflow-x-auto overflow-y-scroll scroll-smooth w-full text-left p-5 rounded-lg border border-zinc-400 dark:border-zinc-700">
+        <fieldset className="h-full w-full overflow-x-auto overflow-y-scroll scroll-smooth text-left p-5 rounded-lg border border-zinc-400 dark:border-zinc-700">
           <legend className="px-2 text-base font-medium">Duty</legend>
           <div className="px-5 flex flex-col gap-y-5">
             <li>
@@ -46,9 +46,9 @@ const Boxs = () => {
         </fieldset>
       </div>
 
-      <div className="h-full w-full mt-5">
-        <fieldset className="h-[65vh] w-full overflow-x-hidden overflow-y-scroll scroll-smooth justify-center content-center gap-2 m-2 rounded-lg border border-zinc-400 dark:border-zinc-700">
-          <legend className="px-2 text-base font-medium">Demo Content</legend>
+      <div className="h-[65vh] overflow-auto mt-5">
+        <fieldset className="w-full overflow-x-hidden overflow-y-scroll scroll-smooth text-left p-5 rounded-lg border border-zinc-400 dark:border-zinc-700">
+          <legend className="px-2 text-base font-medium">Demo</legend>
           <Revamp />
           <NewFeature />
         </fieldset>
