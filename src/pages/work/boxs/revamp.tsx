@@ -19,7 +19,7 @@ const revamp = () => {
     <>
       <div className="m-2 rounded-xl bg-zinc-900 bg-opacity-60 p-2">
         <div className="text-lg font-bold underline underline-offset-8">
-          Revamp
+          Revamp POS
         </div>
         {content.map((item, index) => {
           return (

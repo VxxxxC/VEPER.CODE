@@ -34,20 +34,22 @@ const Boxs = () => {
           <div className="px-5 flex flex-col gap-y-5">
             <li>
               Participating company Website, iOS/Android App UI, POS System UI
-              revamp, according from desigers Figma prototype
+              revamp, according from desigers Figma design
             </li>
             <li>Create reuseable UI components</li>
             <li>
-              Collaborate with designers, Project Manager, and CS team to define
-              suitable and user friendly UX flow, UI design for shipping new
-              features on POS system
+              Collaborating with Designers, Project Manager, and CS team to
+              defining UX flow for shipping new features on POS system
+            </li>
+            <li>
+              Perform bug fix for old UI components or client reported issue
             </li>
           </div>
         </fieldset>
       </div>
 
-      <div className="h-[65vh] overflow-auto mt-5">
-        <fieldset className="w-full overflow-x-hidden overflow-y-scroll scroll-smooth text-left p-5 rounded-lg border border-zinc-400 dark:border-zinc-700">
+      <div className="mt-5">
+        <fieldset className="h-[65vh] w-full overflow-x-hidden overflow-y-scroll scroll-smooth text-left p-5 rounded-lg border border-zinc-400 dark:border-zinc-700">
           <legend className="px-2 text-base font-medium">Demo</legend>
           <Revamp />
           <NewFeature />

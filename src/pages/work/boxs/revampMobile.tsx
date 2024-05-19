@@ -18,7 +18,7 @@ const mobileVersion = () => {
     <>
       <div className="m-2 rounded-xl p-2">
         <div className="text-lg font-bold underline underline-offset-8">
-          Mobile Version
+          Revamp POS - Mobile View
         </div>
         {content.map((item, index) => {
           return (
