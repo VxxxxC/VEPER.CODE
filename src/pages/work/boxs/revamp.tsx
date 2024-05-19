@@ -1,5 +1,5 @@
 import React from "react";
-import RevampMobile from "./revampMobile.tsx";
+import RevampMobile from "./revampMobile";
 
 const revamp = () => {
   const content = [
