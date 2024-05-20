@@ -1,7 +1,7 @@
 import React from "react";
 import Selector from "@components/TechIcons";
-import Revamp from "./boxs/revamp";
-import NewFeature from "./boxs/newFeature";
+import Revamp from "./revamp";
+import NewFeature from "./newFeature";
 
 const Boxs = () => {
   return (

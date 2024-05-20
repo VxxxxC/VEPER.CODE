@@ -2,7 +2,7 @@ import React from "react";
 import MotionDiv from "@components/motionDiv";
 import Boxs from "./boxs";
 
-const WorkPosts = () => {
+const jobContent = ({ props }: { props: React.ReactNode }) => {
   const works = [<Boxs />];
   return (
     <>
@@ -24,5 +24,4 @@ const WorkPosts = () => {
   );
 };
 
-export default WorkPosts;
-
+export default jobContent;
