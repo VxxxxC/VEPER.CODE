@@ -84,11 +84,16 @@ const BioContent = () => {
                 <tr>
                   <td>2023 - present</td>
                   <td>
-                    <a
-                      href="/work/boxs"
-                      className="underline underline-offset-4"
-                    >
-                      Frontend Developer in BOXS
+                    <a href="/work/boxs">
+                      <button
+                        className="py-2 px-8 border-4 border-double rounded-lg border-orange-800 bg-orange-300 text-orange-900 hover:border-purple-300 hover:bg-purple-800 hover:text-purple-300 font-sans font-bold"
+                        onClick={btn}
+                      >
+                        <div className="flex justify-center items-center gap-4">
+                          <p>Frontend Developer in BOXS</p>
+                          <MdKeyboardArrowRight size={22} />
+                        </div>
+                      </button>
                     </a>
                   </td>
                 </tr>

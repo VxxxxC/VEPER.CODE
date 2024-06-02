@@ -16,7 +16,7 @@ const newFeature = () => {
 
   return (
     <>
-      <div className="m-2 rounded-xl bg-stone-600 bg-opacity-30 p-2">
+      <div className="m-2 rounded-xl p-2">
         <div className="text-lg font-bold underline underline-offset-8">
           New Features
         </div>

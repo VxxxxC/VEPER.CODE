@@ -17,7 +17,7 @@ const revamp = () => {
 
   return (
     <>
-      <div className="m-2 rounded-xl bg-zinc-900 bg-opacity-60 p-2">
+      <div className="m-2 rounded-xl p-2">
         <div className="text-lg font-bold underline underline-offset-8">
           Revamp POS
         </div>
@@ -35,7 +35,6 @@ const revamp = () => {
             </div>
           );
         })}
-        <RevampMobile />
       </div>
     </>
   );
