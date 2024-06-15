@@ -135,8 +135,12 @@ const BioContent = () => {
           </fieldset>
           <fieldset className="font-black text-lg text-orange-500 border-4 border-teal-400 dark:border-cyan-500">
             <legend>Currently Learning</legend>
-            <p>Dart</p>
-            <p>Flutter</p>
+            <div className="flex flex-row justify-center items-center">
+              <Selector props="Dart" size={30} showName={false} />
+              <Selector props="Flutter" size={30} showName={false} />
+              <Selector props="Solidity" size={30} showName={false} />
+              <Selector props="Blender" size={30} showName={false} />
+            </div>
           </fieldset>
 
           <div className="flex flex-col items-start">
