@@ -20,7 +20,7 @@ const BioContent = () => {
       <MotionDiv delay={0.5}>
         <main
           id="bio"
-          className="my-20 px-10 inline-flex flex-col item-start"
+          className="my-20 px-10 inline-flex flex-col item-start mobile:w-screen"
           aria-label="bio"
         >
           <div className="mx-[5%] flex justify-between mobile:flex-col mobile:items-center">
@@ -54,7 +54,7 @@ const BioContent = () => {
               <h1 className="mb-2 h-1 bg-gray-600"></h1>
             </h1>
           </div>
-          <h2 className="text-md font-medium my-2 px-5 flex flex-col items-start">
+          <h2 className="text-md font-medium my-2 flex flex-col items-start">
             <table>
               <tbody>
                 <tr>
@@ -91,7 +91,7 @@ const BioContent = () => {
                       >
                         <div className="flex justify-center items-center gap-4">
                           <p>Frontend Developer in BOXS</p>
-                          <MdKeyboardArrowRight size={22} />
+                          <MdKeyboardArrowRight size={52} />
                         </div>
                       </button>
                     </a>
@@ -135,7 +135,7 @@ const BioContent = () => {
           </fieldset>
           <fieldset className="font-black text-lg text-orange-500 border-4 border-teal-400 dark:border-cyan-500">
             <legend>Currently Learning</legend>
-            <div className="flex flex-row justify-center items-center">
+            <div className="flex flex-row justify-center items-center mobile:flex-col">
               <Selector props="Dart" size={30} showName={false} />
               <Selector props="Flutter" size={30} showName={false} />
               <Selector props="Solidity" size={30} showName={false} />
