@@ -90,7 +90,7 @@ const BioContent = () => {
                         onClick={btn}
                       >
                         <div className="flex justify-center items-center gap-4">
-                          <p>Frontend Developer in BOXS</p>
+                          <p>Frontend Developer at BOXS Limited</p>
                           <MdKeyboardArrowRight size={52} />
                         </div>
                       </button>
@@ -118,12 +118,12 @@ const BioContent = () => {
           </blockquote>
           <fieldset className="border border-zinc-500">
             <legend>Frontend</legend>
-            <p>HTML, CSS</p>
-            <p>Javascript / Typescript</p>
-            <p>React</p>
+            <p>Typescript</p>
+            <p>React.js</p>
             <p>React-Native</p>
             <p>Redux</p>
             <p>Redux-Thunk</p>
+            <p>Vue.js</p>
             <p>Tailwindcss</p>
           </fieldset>
           <fieldset className="border border-zinc-500">
