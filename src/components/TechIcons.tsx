@@ -18,6 +18,8 @@ import {
   SiFlutter,
   SiSolidity,
   SiBlender,
+  SiNuxtdotjs,
+  SiVuedotjs,
 } from "react-icons/si";
 import { GiFeather } from "react-icons/gi";
 
@@ -184,6 +186,20 @@ const selector = ({
         return (
           <div className="w-[140px] font-sans rounded-3xl m-2 py-1 gap-2 flex justify-center items-center text-orange-400 bg-transparent">
             <SiBlender size={size} color="orange-400" />
+            {showName ? name : null}
+          </div>
+        );
+      case "Nuxt":
+        return (
+          <div className="w-[140px] font-sans rounded-3xl m-2 py-1 gap-2 flex justify-center items-center text-emerald-400 bg-white">
+            <SiNuxtdotjs size={size} color="emerald-400" />
+            {showName ? name : null}
+          </div>
+        );
+      case "Vue":
+        return (
+          <div className="w-[140px] font-sans rounded-3xl m-2 py-1 gap-2 flex justify-center items-center text-emerald-400 bg-white">
+            <SiVuedotjs size={size} color="emerald-400" />
             {showName ? name : null}
           </div>
         );

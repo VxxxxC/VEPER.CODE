@@ -37,6 +37,8 @@ const Boxs = () => {
           <div className="grid grid-cols-2 mobile:grid-cols-1">
             <Selector props="Javascript" />
             <Selector props="Typescript" />
+            <Selector props="Vue" />
+            <Selector props="Nuxt" />
             <Selector props="NativeScript" />
             <Selector props="Nodejs" />
             <Selector props="Feathers.js" />
