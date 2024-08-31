@@ -12,6 +12,11 @@ const newFeature = () => {
       content:
         "https://github.com/VxxxxC/VEPER.CODES/blob/master/demoSrc/1.5/new%20feature/member_dashboard.mov?raw=true",
     },
+    // {
+    //   title: "Order List",
+    //   content:
+    //     "https://github.com/VxxxxC/VEPER.CODES/blob/master/demoSrc/1.5/new%20feature/order_list.mov?raw=true",
+    // },
   ];
 
   return (
