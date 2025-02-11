@@ -20,6 +20,7 @@ import {
   SiBlender,
   SiNuxtdotjs,
   SiVuedotjs,
+  SiRust,
 } from "react-icons/si";
 import { GiFeather } from "react-icons/gi";
 
@@ -151,6 +152,13 @@ const selector = ({
         return (
           <div className="w-[140px] font-sans rounded-3xl m-2 py-1 gap-2 flex justify-center items-center text-orange-400 bg-white">
             <GiFeather size={size} color="orange-400" />
+            {showName ? name : null}
+          </div>
+        );
+      case "Rust":
+        return (
+          <div className="w-[140px] font-sans rounded-3xl m-2 py-1 gap-2 flex justify-center items-center text-orange-400 bg-transparent">
+            <SiRust size={size} color="orange-400" />
             {showName ? name : null}
           </div>
         );
